@@ -23,16 +23,14 @@ const RootLayout: React.FC<Props> = ({ children }) => {
       </head>
       <body style={{ height }}>
         <div>
-          <RootStyleRegistry>
-            <ThemeProvider theme={theme}>
-              <GlobalStyle />
-              <FontStyles />
-              <Cover />
-              <Cursor />
-              <Header />
-              <Parallax>{children}</Parallax>
-            </ThemeProvider>
-          </RootStyleRegistry>
+          <ThemeProvider theme={theme}>
+            <GlobalStyle />
+            <FontStyles />
+            <Cover />
+            <Cursor />
+            <Header />
+            <Parallax>{children}</Parallax>
+          </ThemeProvider>
         </div>
       </body>
     </html >
