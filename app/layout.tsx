@@ -7,6 +7,7 @@ import Cursor from 'components/Cursor'
 import Header from 'components/Header'
 import Parallax from 'components/Parallax'
 import useHeightStore from 'stores/height'
+import RootStyleRegistry from './registry'
 
 type Props = {
   children: React.ReactNode
@@ -22,14 +23,16 @@ const RootLayout: React.FC<Props> = ({ children }) => {
       </head>
       <body style={{ height }}>
         <div>
-          <ThemeProvider theme={theme}>
-            <GlobalStyle />
-            <FontStyles />
-            <Cover />
-            <Cursor />
-            <Header />
-            <Parallax>{children}</Parallax>
-          </ThemeProvider>
+          <RootStyleRegistry>
+            <ThemeProvider theme={theme}>
+              <GlobalStyle />
+              <FontStyles />
+              <Cover />
+              <Cursor />
+              <Header />
+              <Parallax>{children}</Parallax>
+            </ThemeProvider>
+          </RootStyleRegistry>
         </div>
       </body>
     </html >
