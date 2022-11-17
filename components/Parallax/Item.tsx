@@ -33,4 +33,6 @@ const Item: React.FC<Props> = forwardRef<HTMLDivElement, Props>(
   }
 )
 
+Item.displayName = "Item"
+
 export default Item
