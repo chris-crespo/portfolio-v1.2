@@ -3,7 +3,7 @@ import useHeightStore from "stores/height"
 
 const useParallaxDistance = () => {
   const height = useHeightStore(store => store.height)
-  const { innerHeight } = window
+  const innerHeight = typeof window === 'undefined' ? 0 : window.innerHeight
   const distance = -height + innerHeight
 
   return distance

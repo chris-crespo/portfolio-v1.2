@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 
 const Page: React.FC = () => {
   const pathname = usePathname()
-  const [, , slug] = pathname.split('/')
+  const [, , slug] = pathname?.split('/') ?? ['', '', '']
   const work = works.find(work => work.slug === slug)
 
   if (!work) notFound()

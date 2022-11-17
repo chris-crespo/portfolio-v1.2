@@ -14,6 +14,9 @@ const useIntersection = <T extends HTMLElement>(
 ) => {
   const [intersecting, setIntersecting] = useState(false)
 
+  if (typeof IntersectionObserver === 'undefined')
+    return intersecting
+
   const observer = new IntersectionObserver(([entry]) => {
     if (once && entry.isIntersecting) setIntersecting(true)
     else if (!once) setIntersecting(entry.isIntersecting)

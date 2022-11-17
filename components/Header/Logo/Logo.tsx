@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 
 const Logo = () => {
   const pathname = usePathname()
-  const dirs = reject(isEmpty, split('/', pathname))
+  const dirs = reject(isEmpty, split('/', pathname ?? ''))
 
   const title = isEmpty(dirs) ? 'Home' : last(dirs)
   const type = dirs.length < 2 ? 'Page' : dirs[0]
