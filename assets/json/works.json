@@ -1,0 +1,18 @@
+[
+    {
+        "title": "i8080 Emulator",
+        "slug": "i8080-emulator",
+        "shortDescription": "...",
+        "language": "C",
+        "frameworks": ["SDL2"],
+        "year": 2021
+    },
+    {
+        "title": "Portfolio",
+        "slug": "portfolio",
+        "shortDescription": "..",
+        "language": "Typescript",
+        "frameworks": ["Next", "Zustand", "Styled Components", "Framer Motion"],
+        "year": 2022
+    }
+]

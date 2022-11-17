@@ -1,0 +1,34 @@
+[
+    {
+        "label": "Languages",
+        "description": ["C", "Typescript", "Haskell", "Java"]
+    },
+    {
+        "label": "Libraries / Frameworks",
+        "description": ["React", "Next", "Spring"]
+    },
+    {
+        "label": "Roles",
+        "description": ["Fullstack Developer"]
+    },
+    {
+        "label": "Interests",
+        "description": [
+            "Functional Programming",
+            "Programming Languages",
+            "Type Systems"
+        ]
+    },
+    {
+        "label": "Hobbies",
+        "description": [
+            "Programming",
+            "Books",
+            "Music"
+        ]
+    },
+    {
+        "label": "Other",
+        "description": ["Linux"]
+    }
+]
